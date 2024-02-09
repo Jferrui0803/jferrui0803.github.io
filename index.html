@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Test Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Encuentra tu alojamiento perfecto</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Hello, world!</h1>
-    <p>This is a test index file.</p>
+    <header>
+        <div class="container">
+            <h1>Encuentra tu alojamiento perfecto</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alojamientos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="search">
+            <div class="container">
+                <h2>Encuentra tu alojamiento</h2>
+                <form action="buscar.php" method="GET">
+                    <input type="text" name="lugar" placeholder="Lugar">
+                    <input type="date" name="fecha_entrada" placeholder="Fecha de entrada">
+                    <input type="date" name="fecha_salida" placeholder="Fecha de salida">
+                    <input type="number" name="huéspedes" placeholder="Huéspedes">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="results">
+            <div class="container">
+                <h2>Resultados de la búsqueda</h2>
+                <!-- Aquí van los resultados de la búsqueda -->
+                <div class="listing">
+                    <h3>Nombre del alojamiento</h3>
+                    <p>Descripción breve del alojamiento.</p>
+                    <p>Precio por noche: $XXX</p>
+                </div>
+                <div class="listing">
+                    <h3>Nombre del alojamiento</h3>
+                    <p>Descripción breve del alojamiento.</p>
+                    <p>Precio por noche: $XXX</p>
+                </div>
+                <!-- Fin de los resultados -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Derechos de autor © 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
