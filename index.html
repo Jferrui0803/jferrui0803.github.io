@@ -1,63 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking - Encuentra tu alojamiento perfecto</title>
+    <title>Abades  Hotel Zaidin</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Encuentra tu alojamiento perfecto</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Alojamientos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+
+    <header id="cabecera">
+        <div id="logo">
+            <img src="img/logo.png" alt="logo">
+            <h1>Abades Hotel Zaidin</h1>
         </div>
+
+        <div>
+            <p>Nuestras redes sociales</p>
+
+            <a href="https://www.facebook.com/abadesnevadapalace?locale=es_ES">
+                <img src="img/facebook.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com/abadeshoteles">
+                <img src="img/twitter.png" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/abadeshoteles/">
+                <img src="img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        
     </header>
     
+    <nav id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#habitaciones">Habitaciones</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#reservas">Reservas</a>
+    </nav>
+
     <main>
-        <section class="search">
-            <div class="container">
-                <h2>Encuentra tu alojamiento</h2>
-                <form action="buscar.php" method="GET">
-                    <input type="text" name="lugar" placeholder="Lugar">
-                    <input type="date" name="fecha_entrada" placeholder="Fecha de entrada">
-                    <input type="date" name="fecha_salida" placeholder="Fecha de salida">
-                    <input type="number" name="huéspedes" placeholder="Huéspedes">
-                    <button type="submit">Buscar</button>
-                </form>
+
+        <section id="habitaciones">
+            <h2>Habitaciones</h2>
+         
+            <div class="habitacion">
+                <img src="img/habitacion1.jpg" alt="habitacion1">
+                <h3>Habitación doble</h3>
+                <p>Habitación con cama doble, baño privado, aire acondicionado, TV de pantalla plana, minibar y conexión Wi-Fi gratuita.</p>
             </div>
-        </section>
+
+            <div class="habitacion">
+                <img src="img/habitacion2.jpg" alt="habitacion2">
+                <h3>Habitación triple</h3>
+                <p>Habitación con 3 camas individuales, baño privado, aire acondicionado, TV de pantalla plana, minibar y conexión Wi-Fi gratuita.</p>
+
+            </div>
+
+            <div class="habitacion">
+                <img src="img/habitacion3.jpg" alt="habitacion3">
+                <h3>Habitación familiar</h3>
+                <p>Habitación con cama doble y 2 camas individuales, baño privado, aire acondicionado, TV de pantalla plana, minibar y conexión Wi-Fi gratuita.</p>
+
+            </div>
+
+
         
-        <section class="results">
-            <div class="container">
-                <h2>Resultados de la búsqueda</h2>
-                <!-- Aquí van los resultados de la búsqueda -->
-                <div class="listing">
-                    <h3>Nombre del alojamiento</h3>
-                    <p>Descripción breve del alojamiento.</p>
-                    <p>Precio por noche: $XXX</p>
-                </div>
-                <div class="listing">
-                    <h3>Nombre del alojamiento</h3>
-                    <p>Descripción breve del alojamiento.</p>
-                    <p>Precio por noche: $XXX</p>
-                </div>
-                <!-- Fin de los resultados -->
-            </div>
+        </section>
+
+
+
+
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>El hotel Abades Zaidin se encuentra en el centro de Granada, 
+                a 400 metros del Palacio de Congresos. 
+                Ofrece habitaciones con aire acondicionado y conexión Wi-Fi gratuita. 
+                El hotel dispone de un restaurante y un bar. 
+                Las habitaciones del Abades Zaidin son modernas y cuentan con TV de pantalla plana, 
+                minibar y baño privado con secador de pelo. El hotel alberga un restaurante que sirve 
+                platos de cocina mediterránea. También hay un bar que ofrece bebidas y aperitivos. 
+                El hotel se encuentra a 15 minutos a pie del centro de Granada y a 2 km de la Alhambra. 
+                La estación de tren de Granada está a 1,5 km del hotel y el aeropuerto de Granada, 
+                a 20 minutos en coche.</p>
         </section>
     </main>
     
-    <footer>
-        <div class="container">
-            <p>Derechos de autor © 2024. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-</body>
 </html>
 
