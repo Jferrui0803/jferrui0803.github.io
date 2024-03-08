@@ -1,91 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abades  Hotel Zaidin</title>
+    <title>Abades Nevada Hotel Zaidin</title>
+    <link rel="icon" href="Fotos/abades.jpg" type="favicon">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <header id="cabecera">
-        <div id="logo">
-            <img src="img/logo.png" alt="logo">
-            <h1>Abades Hotel Zaidin</h1>
+    <header>
+        <div id="cabecera">
+            <div id="logo">
+                <img src="Fotos/abades.jpg" alt="Logo Hotel">
+                <h1 id="texto_cabecera">Hotel Abades Nevada</h1>
+            </div>
+
+            <div id="redes_sociales">
+                <a href="https://www.facebook.com/abadesnevadapalace?locale=es_ES">
+                    <img src="Fotos/facebook.png" alt="facebook">
+                </a>
+                <a href="https://twitter.com/abadeshoteles">
+                    <img src="Fotos/x.jpg" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/abadeshoteles/">
+                    <img src="Fotos/instagram.jpg" alt="instagram">
+                </a>
+            </div>
         </div>
 
-        <div>
-            <p>Nuestras redes sociales</p>
-
-            <a href="https://www.facebook.com/abadesnevadapalace?locale=es_ES">
-                <img src="img/facebook.png" alt="facebook">
-            </a>
-            <a href="https://twitter.com/abadeshoteles">
-                <img src="img/twitter.png" alt="twitter">
-            </a>
-            <a href="https://www.instagram.com/abadeshoteles/">
-                <img src="img/instagram.png" alt="instagram">
-            </a>
-        </div>
-        
+        <nav id="menu">
+            <a href="#habitaciones">Habitaciones</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#reservas">Reservas</a>
+        </nav>
     </header>
-    
-    <nav id="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#habitaciones">Habitaciones</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#reservas">Reservas</a>
-    </nav>
 
     <main>
-
         <section id="habitaciones">
             <h2>Habitaciones</h2>
-         
-            <div class="habitacion">
-                <img src="img/habitacion1.jpg" alt="habitacion1">
-                <h3>Habitación doble</h3>
-                <p>Habitación con cama doble, baño privado, aire acondicionado, TV de pantalla plana, minibar y conexión Wi-Fi gratuita.</p>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <h2>HABITACIÓN DOBLE</h2>
+        <p>24 m2 de superficie dotados de comodidad, confort y decoración moderna. Las habitaciones dobles son muy luminosas y cuentan con persianas inteligentes.</p>
+                    <a href="habitaciondoble.html">
+                        <img src="Fotos/habitacion_doble1.jpg" alt="Habitación 1">
+        <p><a href="habitaciondoble.html">Ver más</a> | <a href="#reservar">RESERVAR HABITACION</a></p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Fotos/habitacion2.jpg" alt="Habitación 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="Fotos/habitacion3.jpg" alt="Habitación 3">
+                </div>
+              
             </div>
-
-            <div class="habitacion">
-                <img src="img/habitacion2.jpg" alt="habitacion2">
-                <h3>Habitación triple</h3>
-                <p>Habitación con 3 camas individuales, baño privado, aire acondicionado, TV de pantalla plana, minibar y conexión Wi-Fi gratuita.</p>
-
-            </div>
-
-            <div class="habitacion">
-                <img src="img/habitacion3.jpg" alt="habitacion3">
-                <h3>Habitación familiar</h3>
-                <p>Habitación con cama doble y 2 camas individuales, baño privado, aire acondicionado, TV de pantalla plana, minibar y conexión Wi-Fi gratuita.</p>
-
-            </div>
-
-
-        
         </section>
-
-
-
-
 
         <section id="servicios">
             <h2>Servicios</h2>
-            <p>El hotel Abades Zaidin se encuentra en el centro de Granada, 
-                a 400 metros del Palacio de Congresos. 
-                Ofrece habitaciones con aire acondicionado y conexión Wi-Fi gratuita. 
-                El hotel dispone de un restaurante y un bar. 
-                Las habitaciones del Abades Zaidin son modernas y cuentan con TV de pantalla plana, 
-                minibar y baño privado con secador de pelo. El hotel alberga un restaurante que sirve 
-                platos de cocina mediterránea. También hay un bar que ofrece bebidas y aperitivos. 
-                El hotel se encuentra a 15 minutos a pie del centro de Granada y a 2 km de la Alhambra. 
-                La estación de tren de Granada está a 1,5 km del hotel y el aeropuerto de Granada, 
-                a 20 minutos en coche.</p>
+            <p>Descripción de los servicios ofrecidos por el hotel.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="Contacto">
+                <input type="text" id="nombre" name="Nombre" placeholder="Nombre" required>
+                <input type="email" id="email" name="Email" placeholder="Email" required>
+                <input type="tel" id="telefono" name="Telefono" placeholder="Teléfono" required>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+                <input type="submit" value="Enviar" id="bottom">
+            </form>
         </section>
     </main>
-    
+
+    <footer>
+        <div>
+            <p>Hootel Abades Nevada Palace</p>
+            <p>C. de la Sultana, 3, Genil, 18008 Granada</p>
+            <p>Teléfono: 958 80 99 99</p>
+        </div>
+        <div id="redes_sociales">
+        
+            <a href="https://www.facebook.com/abadesnevadapalace?locale=es_ES">
+                <img src="Fotos/facebook.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com/abadeshoteles">
+                <img src="Fotos/x.jpg" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/abadeshoteles/">
+                <img src="Fotos/instagram.jpg" alt="instagram">
+            </a>
+        </div>
+    </footer>
+
+</body>
 </html>
 
