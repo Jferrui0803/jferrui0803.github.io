@@ -16,17 +16,7 @@
                 <h1 id="texto_cabecera">Hotel Abades Nevada</h1>
             </div>
 
-            <div id="redes_sociales">
-                <a href="https://www.facebook.com/abadesnevadapalace?locale=es_ES">
-                    <img src="Fotos/facebook.png" alt="facebook">
-                </a>
-                <a href="https://twitter.com/abadeshoteles">
-                    <img src="Fotos/x.jpg" alt="twitter">
-                </a>
-                <a href="https://www.instagram.com/abadeshoteles/">
-                    <img src="Fotos/instagram.jpg" alt="instagram">
-                </a>
-            </div>
+            
         </div>
 
         <nav id="menu">
@@ -34,6 +24,7 @@
             <a href="#servicios">Servicios</a>
             <a href="#contacto">Contacto</a>
             <a href="#reservas">Reservas</a>
+            <a href="#ubicacion">Ubicación</a>
         </nav>
     </header>
 
@@ -81,48 +72,58 @@
 
         <section id="servicios">
             <h2>Servicios</h2>
+        
+            <div class="servicio-gallery">
+                <div class="servicio-card">
+                    <div class="card-image" id="piscina">
+                        <img src="./Fotos/piscina.jpg" alt="Piscina">
+                        <div class="descripcion">
+                            <h3>Piscina</h3>
+                            <p>Disfrute de nuestra piscina al aire libre para refrescarse y relajarse bajo el sol.</p>
+                        </div>
+                </div>
+            </div>
+            
 
             <div class="servicio-card">
-                <div class="card-image">
-                    <img src="./Fotos/piscina.jpg" alt="Piscina">
-                </div>
-                <div class="descripcion">
-                    <h3>Piscina</h3>
-                    <p>Disfrute de nuestra piscina al aire libre para refrescarse y relajarse bajo el sol.</p>
-                </div>
-            </div>
-            <div class="servicio-card">
-                <div class="card-image">
+                <div class="card-image" id="parking">
                     <img src="./Fotos/parking.jpg" alt="Parking">
-                </div>
-                <div class="descripcion">
-                    <h3>Parking</h3>
-                    <p>Amplio parking disponible para garantizar la comodidad y seguridad de su vehículo durante su estancia.</p>
+                    <div class="descripcion">
+                        <h3>Parking</h3>
+                        <p>Amplio parking disponible para garantizar la comodidad y seguridad de su vehículo durante su estancia.</p>
+                    </div>
                 </div>
             </div>
+            
             <div class="servicio-card">
-                <div class="card-image">
+                <div class="card-image" id="gimnasio">
                     <img src="./Fotos/gimnasio.jpg" alt="Gimnasio">
-                </div>
-                <div class="descripcion">
-                    <h3>Gimnasio</h3>
-                    <p>Manténgase en forma durante su estancia en nuestro gimnasio completamente equipado.</p>
+                    <div class="descripcion">
+                        <h3>Gimnasio</h3>
+                        <p>Manténgase en forma durante su estancia en nuestro gimnasio completamente equipado.</p>
+                    </div>
                 </div>
             </div>
+
             <div class="servicio-card">
-                <div class="card-image">
+                <div class="card-image" id="servicio-habitaciones">
                     <img src="./Fotos/serviciohbt.jpg" alt="Servicio de Habitaciones">
-                </div>
-                <div class="descripcion">
-                    <h3>Servicio de Habitaciones</h3>
-                    <p>Nuestro servicio de habitaciones está disponible las 24 horas para satisfacer todas sus necesidades y brindarle una experiencia de lujo.</p>
+                    <div class="descripcion">
+                        <h3>Servicio de Habitaciones</h3>
+                        <p>Nuestro servicio de habitaciones está disponible las 24 horas para satisfacer todas sus necesidades y brindarle una experiencia de lujo.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+            
+      </div>
+    </section>
 
         <section id="contacto">
+            <br>
             <h2>Contacto</h2>
-            <form action="#" method="Contacto">
+            <p>¡Estamos aquí para ayudarte! Contáctanos a través de este formulario:</p>
+            <br>
+            <form action="#" method="post">
                 <input type="text" id="nombre" name="Nombre" placeholder="Nombre" required>
                 <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
                 <input type="email" id="email" name="Email" placeholder="Email" required>
@@ -131,6 +132,17 @@
                 <input type="submit" value="Enviar" id="bottom">
             </form>
         </section>
+
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Encuentre nuestra ubicación en el mapa:</p>
+            <br>
+            <div id="map-container">
+                <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Hotel%20nevada%20palace+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        
+        </section>
+
     </main>
 
     <footer>
@@ -150,6 +162,7 @@
             <a href="https://www.instagram.com/abadeshoteles/">
                 <img src="Fotos/instagram.jpg" alt="instagram">
             </a>
+
         </div>
     </footer>
 

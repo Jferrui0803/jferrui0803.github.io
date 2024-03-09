@@ -109,40 +109,56 @@ h2 {
     border-radius: 10px;
 }
 
-form {
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    background-color: rgba(63, 63, 60, 0.8);
+#contacto {
+    background-color: #f0f0f0;
     padding: 20px;
-    border-radius: 12px;
+    text-align: center;
 }
 
-input,
-textarea {
+#contacto h2{
+    color: #333;
+}
+
+#contacto p {
+    color: #555;
+}
+
+#contacto form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto form input,
+#contacto form textarea {
     width: 100%;
-    padding: 10px;
     margin-bottom: 20px;
-    border: none;
+    padding: 10px;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-textarea {
-    min-height: 100px;
+#contacto form textarea {
+    resize: none;
+    height: 150px;
 }
 
-#bottom {
-    background-color: #31384A;
+#contacto form input[type="submit"] {
+    background-color: #007bff;
     color: #fff;
-    padding: 15px 20px;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-#bottom:hover {
-    background-color: #4B536B;
+#contacto form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 iframe {
@@ -183,6 +199,18 @@ footer a {
     height: auto;
 }
 
+#servicios {
+    padding: 20px;
+}
+
+.servicio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; 
+    
+}
+
 .servicio-card {
     position: relative;
     width: 100%;
@@ -190,6 +218,7 @@ footer a {
     height: 200px;
     margin: auto;
     margin-bottom: 20px;
+    
 }
 
 .card-image {
@@ -219,6 +248,12 @@ footer a {
 .card-image:hover .descripcion {
     transform: translateY(0);
     opacity: 1;
+}
+
+#map-container {
+    width: 100%;
+    height: 400px; 
+    margin-bottom: 20px; 
 }
 
 /* Estilos para dispositivos móviles */
