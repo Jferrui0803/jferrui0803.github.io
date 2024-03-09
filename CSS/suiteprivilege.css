@@ -78,7 +78,7 @@ div a img{
 }
 
 main {
-    background-color: #cfd4b6;
+    background-color: #f0eba9;
     padding: 2rem;
     
 }
@@ -159,7 +159,7 @@ iframe {
 }
 
 footer {
-    background-color: #1E1A1D;
+    background-color: #a17c63;
     color: white;
     text-align: center;
     padding: 20px;
@@ -170,11 +170,6 @@ footer a {
     text-decoration: none;
 }
 
-.triangulo {
-    width: 20px;
-    height: 20px;
-    background-color: #8c705f00;
-}
 
 .habitacion-info {
     display: flex;
@@ -195,4 +190,25 @@ footer a {
 .habitacion-imagen img {
     max-width: 100%;
     height: auto;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    #logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu a {
+        padding: 10px;
+    }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
 }

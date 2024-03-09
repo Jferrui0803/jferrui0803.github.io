@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -11,39 +12,39 @@ body {
 }
 
 header {
-    
     background-color: #000000cc;
     padding: 20px;
     color: white;
-
 }
 
-#texto_cabecera{
-text-align: center;
-margin: auto;
-display: flex;
+#texto_cabecera {
+    text-align: center;
+    margin: auto;
+    display: flex;
 }
 
-#cabecera{
+#cabecera {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 18px;
     padding: 15px;
 }
-div a img{
+
+div a img {
     background-color: white;
     border-radius: 50%;
     width: 50px;
     height: 50px;
 }
 
-#logo{
+#logo {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
     align-items: center;
 }
+
 #logo img {
     width: 100px;
     height: 100px;
@@ -63,6 +64,7 @@ div a img{
     align-items: center;
     gap: 20px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 #menu a {
@@ -78,9 +80,8 @@ div a img{
 }
 
 main {
-    background-color: #cfd4b6;
+    background-color: #f0eba9;
     padding: 2rem;
-    
 }
 
 section {
@@ -94,15 +95,6 @@ h2 {
     color: #333;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.titulo-habitaciones {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    color: #000000;
-    text-transform: uppercase;
-    border-bottom: 2px solid #c76d6d;
-    padding-bottom: 5px;
 }
 
 .gallery-container {
@@ -121,12 +113,13 @@ form {
     width: 100%;
     max-width: 500px;
     margin: auto;
-    background-color: rgba(145, 180, 168, 0.8);
+    background-color: rgba(63, 63, 60, 0.8);
     padding: 20px;
     border-radius: 12px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -159,7 +152,7 @@ iframe {
 }
 
 footer {
-    background-color: #1E1A1D;
+    background-color: #a17c63;
     color: white;
     text-align: center;
     padding: 20px;
@@ -168,12 +161,6 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
-}
-
-.triangulo {
-    width: 20px;
-    height: 20px;
-    background-color: #8c705f00;
 }
 
 .habitacion-info {
@@ -194,4 +181,63 @@ footer a {
 .habitacion-imagen img {
     max-width: 100%;
     height: auto;
+}
+
+.servicio-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-image:hover .descripcion {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    #logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu a {
+        padding: 10px;
+    }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
 }
