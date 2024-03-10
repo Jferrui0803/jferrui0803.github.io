@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abades Nevada Hotel Zaidin</title>
+    <link rel="icon" href="../Fotos/abades.jpg" type="favicon">
+    <link rel="stylesheet" href="../CSS/reserva.css">
+</head>
+<body>
+
+    <header>
+        <div id="cabecera">
+            <div id="logo">
+                <a href="../index.html">
+                <img src="../Fotos/abades.jpg" alt="Logo Hotel"/>
+                </a>
+                <h1 id="texto_cabecera">Hotel Abades Nevada</h1>
+              </div>
+        </div>
+
+        <nav id="menu">
+            <a href="../index.html#habitaciones">Habitaciones</a>
+            <a href="../index.html#servicios">Servicios</a>
+            <a href="../index.html#contacto">Contacto</a>
+            <a href="./reserva.html">Reservas</a>
+            <a href="../index.html#ubicacion">Ubicación</a>
+            <a href="./sobre_nosotros.html">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+<h2>Reserva de Habitaciones</h2>
+            <p>Por favor, complete el formulario para realizar su reserva:</p>
+            <br>
+
+            <form action="#" method="post">
+                <label for="habitacion">Tipo de Habitación:</label>
+                <select id="habitacion" name="habitacion">
+                    <option value="doble">Habitación Doble</option>
+                    <option value="superior">Habitación Superior</option>
+                    <option value="suite_privilege">Junior Suite Privilege</option>
+                    <option value="suite_romance">Junior Suite Romance</option>
+                </select>
+                <br>
+                <label for="fecha_entrada">Fecha de Entrada:</label>
+                <input type="date" id="fecha_entrada" name="fecha_entrada" required>
+                <br>
+                <label for="fecha_salida">Fecha de Salida:</label>
+                <input type="date" id="fecha_salida" name="fecha_salida" required>
+                <br>
+                <label for="adultos">Adultos:</label>
+                <input type="number" id="adultos" name="adultos" min="1" required>
+                <br>
+                <label for="ninos">Niños:</label>
+                <input type="number" id="ninos" name="ninos" min="0">
+                <br>
+                <input type="submit" value="Enviar Reserva" id="bottom">
+            </form>
+
+            <footer>
+                <div>
+                    <p>Hotel Abades Nevada Palace</p>
+                    <p>C. de la Sultana, 3, Genil, 18008 Granada</p>
+                    <p>Teléfono: 958 80 99 99</p>
+                </div>
+                
+            </footer>
+        
+        </body>
+        </html>
